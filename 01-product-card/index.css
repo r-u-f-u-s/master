@@ -149,11 +149,6 @@ body {
         align-items: center;
         height: 24px;
         padding: 0 8px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        border-radius: 8px;
-        position: absolute;
         margin: 10px;
     }
     .cards__last {
