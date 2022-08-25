@@ -5,16 +5,17 @@ let buttonNameVisible = document.querySelector('.collapsible__action--visible');
 let buttonNameHidden = document.querySelector('.collapsible__action--hidden');
 
 buttonNameVisible.style.display = "none";
-text.style.visibility = "hidden";
+text.style.opacity = "0"
 
 button.addEventListener("click", function() {
     if (buttonNameVisible.style.display == "none") {
         buttonNameVisible.style.display = "block";
         buttonNameHidden.style.display = "none";
-        text.style.visibility = "visible";
+        text.style.opacity = "1";
+        text.style.transition = "0.5s all ease";
     } else {
         buttonNameVisible.style.display = "none";
         buttonNameHidden.style.display = "block";
-        text.style.visibility = "hidden";
+        text.style.opacity = "0";
     }
 });
